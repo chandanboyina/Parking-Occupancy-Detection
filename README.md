@@ -1,12 +1,8 @@
-# Automated Parking Lot Detection Pipeline
+# Automated Parking Occupancy Detection
 
 A complete automated system for detecting parking space occupancy using YOLOv5 → Mask R-CNN → DINO pipeline, optimized for the PKLot dataset.
 
-**Author:** MiniMax Agent  
-**Date:** 2025-12-02  
-**Hardware:** Optimized for RTX 4060 8GB, 16GB RAM
-
-## 🎯 Overview
+## Overview
 
 This project provides a fully automated parking lot analysis system that:
 
@@ -18,14 +14,14 @@ This project provides a fully automated parking lot analysis system that:
 
 ### Key Features
 
-✅ **Complete Automation** - No manual processing required  
-✅ **High Accuracy** - Multi-model ensemble approach  
-✅ **GPU Optimized** - Designed for RTX 4060 8GB  
-✅ **Detailed Output** - Vacant space labels and statistics  
-✅ **Visual Analysis** - Annotated images and comprehensive reports  
-✅ **Batch Processing** - Process entire datasets automatically  
+ **Complete Automation** - No manual processing required  
+ **High Accuracy** - Multi-model ensemble approach  
+ **GPU Optimized** - Designed for RTX 4060 8GB  
+ **Detailed Output** - Vacant space labels and statistics  
+ **Visual Analysis** - Annotated images and comprehensive reports  
+ **Batch Processing** - Process entire datasets automatically  
 
-## 📁 Project Structure
+## Project Structure
 
 ```
 pklot-deep-learning-minimal/
@@ -43,7 +39,7 @@ pklot-deep-learning-minimal/
 └── example_usage.py              # Usage example
 ```
 
-## 🚀 Quick Start
+## Quick Start
 
 ### 1. Install Dependencies
 
@@ -80,7 +76,7 @@ Results are saved in `results/` directory:
 - `occupancy_summary.csv` - Summary statistics
 - `vacant_space_mappings.json` - Detailed vacant space information
 
-## 📊 Output Format
+## Output Format
 
 ### Final Results Include:
 
@@ -114,7 +110,7 @@ Results are saved in `results/` directory:
    - Blue boxes for vehicle detections
    - Confidence scores and labels
 
-## 🔧 Configuration
+## Configuration
 
 The system is fully configurable through `config.yaml`:
 
@@ -139,7 +135,7 @@ hardware:
     memory_optimization: true
 ```
 
-## 🎛️ Pipeline Workflow
+## Pipeline Workflow
 
 ```
 Input Images (PKLot Dataset)
@@ -166,7 +162,7 @@ Output: Vacant/Occupied Space Counts + Labels
 5. **Occupancy Decision**: Classifies each space as vacant/occupied
 6. **Output Generation**: Creates reports and visualizations
 
-## 📈 Performance
+## Performance
 
 ### Expected Performance on RTX 4060:
 - **Processing Speed**: ~2-4 images per second
@@ -179,7 +175,7 @@ Output: Vacant/Occupied Space Counts + Labels
 - **Recall**: Minimal false negatives in occupied space detection
 - **F1-Score**: Balanced performance across occupancy states
 
-## 🔍 Detailed Features
+## Detailed Features
 
 ### 1. Multi-Model Ensemble
 - **YOLOv5**: Fast vehicle detection
@@ -201,7 +197,7 @@ Output: Vacant/Occupied Space Counts + Labels
 - Statistical charts and graphs
 - Detailed occupancy reports
 
-## 🛠️ Customization
+## Customization
 
 ### Adding New Vehicle Classes:
 Edit `config.yaml`:
@@ -227,7 +223,7 @@ visualizer:
     vacant: [0, 255, 0]      # Green
 ```
 
-## 📋 Troubleshooting
+## Troubleshooting
 
 ### Common Issues:
 
@@ -253,7 +249,7 @@ visualizer:
 - Keep GPU drivers updated
 - Monitor GPU temperature
 
-## 🎯 Use Cases
+## Use Cases
 
 ### 1. **Parking Management Systems**
 - Real-time occupancy monitoring
@@ -270,7 +266,7 @@ visualizer:
 - Academic research on parking systems
 - Machine learning model development
 
-## 📚 Technical Details
+## Technical Details
 
 ### Dependencies:
 - **Deep Learning**: PyTorch, TensorFlow
@@ -288,32 +284,6 @@ visualizer:
 - **Input**: JPG, PNG, BMP, TIFF
 - **Output**: JSON, CSV, TXT, Annotated Images
 
-## 📞 Support
-
-### Getting Help:
-1. Check the troubleshooting section above
-2. Review the configuration options
-3. Verify hardware requirements
-4. Ensure dataset path is correct
-
-### System Requirements:
-- **GPU**: NVIDIA RTX 4060 (8GB) or better
-- **RAM**: 16GB system memory
-- **Storage**: 10GB+ free space
-- **OS**: Linux/Windows with CUDA support
-
-## 📝 License
-
-This project is for educational and research purposes. Please respect the licenses of the underlying models and datasets.
-
-## 🤝 Contributing
-
-This is a reconstruction of a parking lot detection project. For improvements or issues:
-1. Test with different datasets
-2. Optimize for your specific hardware
-3. Share performance insights
-4. Report bugs or improvements
-
 ---
 
-**Ready to automate your parking lot analysis? Run `python setup.py` and start processing! 🚗📊**
+**Ready to automate your parking lot analysis? Run `python setup.py` and start processing!**
